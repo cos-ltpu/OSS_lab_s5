@@ -1,0 +1,144 @@
+    1  whoami
+    2  whoaim
+    3  whoami
+    4  echo "Hello World"
+    5  date
+    6  cal
+    7  man cal
+    8  cal -3
+    9  man
+   10  man man
+   11  history
+   12  clear
+   13  history
+   14  pwd
+   15  cd /
+   16  pwd
+   17  cd ..
+   18  pwd
+   19  ls
+   20  ls /var
+   21  cd ~
+   22  pwd
+   23  cd ..
+   24  pwd
+   25  ls
+   26  cd
+   27  pwd
+   28  ls -l
+   29  mkdir fruits
+   30  cd /
+   31  mkdir ~/animals
+   32  touch /tmp/temp
+   33  cd ~/fruits
+   34  pwd
+   35  man touch
+   36  touch apple banana pineaple lion
+   37  ls
+   38  touch ~/animals/cat.txt
+   39  touch ~/animals/dog.txt
+   40  touch ~/animals/elephant.txt
+   41  man ls
+   42  ls --time=birth apple
+   43  ls --time=birth apple -l
+   44  ls --time=birth
+   45  ls --time=ctime apple -l
+   46  ls b*
+   47  ls *a
+   48  ls [bi]*
+   49  ls b* i*
+   50  cp /ets/passwd ~
+   51  cp /etc/passwd ~
+   52  cat /etc/issue
+   53  man cp
+   54  cp /etc/issue ~/animals/apple
+   55  cp /etc/issue ~/fruits/apple
+   56  cat ~/fruits/apple
+   57  man mv
+   58  mv lion ~/animals
+   59  ls ~/animals -l
+   60  rm ~/animals/apple
+   61  ls ~/animals -l
+   62  man ln
+   63  mv pineaple pineapple
+   64  man wc
+   65  wc -l /etc/passwd
+   66  wc  /etc/passwd -l
+   67  cd
+   68  ln -s /etc/passwd passwd_link
+   69  ln .bash_history history_hard
+   70  ln ~/ .bash_history history_hard
+   71  ln ~/.bash_history history_hard
+   72  ln bash_history history_hard
+   73  ln  .bash_history history_hard
+   74  ls -l ~/.bash_history
+   75  ls -l ~/passwd
+   76  rm fruits/apple
+   77  mkdir rmme
+   78  rmdir rmme
+   79  rmdir fruits
+   80  rm -fr fruits
+   81  cat /etc/passwd /var/log/boot.log
+   82  cp /etc/init.d/ ~
+   83  cp -r /etc/init.d/ ~
+   84  rm -fr init.d
+   85  man less
+   86  man sort
+   87  cut -d: -f1 /etc/passwd | sort
+   88  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+   89  man column
+   90  man sort
+   91  man less
+   92  man sort
+   93  cut -d: -f1 /etc/passwd | sort
+   94  cut -d: -f1,3 /etc/passwd | sort | column -ts:
+   95  grep :/bin/bash /etc/passwd | wc -l
+   96  grep :/bin/bash /etc/passwd | cut -d: -f1 /etc/passwd | sort -r
+   97  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+   98  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | cut 1-25
+   99  man cut
+  100  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | cut 25
+  101  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -25
+  102  rpm -ql man-db | xargs -l du    2> /dev/null  | sort -n
+  103  top -b -n1 | sort -k 11
+  104  top -b -n1 | sort -k 12
+  105  top -b -n1 | tail -n+8 | cut -c7-  | tr -s ' ' '\t' | cut -f12,5
+  106  cut /etc/passwd | sort | tr ":" " "|column -ts: | less 
+  107  cut /etc/passwd | sort | tr ":" " " | column -ts: | less 
+  108  cat /etc/passwd | sort | tr ":" " " | column -ts: | less 
+  109  cut -d: -f1,3  /etc/passwd | sort | column -ts: | less
+  110  cut -d: -f1,7  /etc/passwd | sort | column -ts: | less
+  111  yum install -y git
+  112  cd /usr/share/doc/git-*
+  113  sudo yum install -y git
+  114  cd /usr/share/doc/git-*
+  115  cd /usr/share/doc/git
+  116  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  117  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  118  tr '[:lower:]' '[:upper:]' < user-manual.txt |  tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  119  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  120  cd
+  121  ping ya.ru
+  122  curl wttr.in
+  123  hostname -I
+  124  curl ifconfig.me
+  125  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md | less
+  126  less README-ru.md.1
+  127  less README-ru.md
+  128  sudo id
+  129  id
+  130  sudo less /var/log/messages
+  131  su
+  132  man sort
+  133  ls /etc/passwd
+  134  cat  /etc/passwd
+  135  su
+  136  uname -a
+  137  su
+  138  id
+  139  sudo passwd root
+  140  su
+  141  id
+  142  whoami
+  143  su
+  144  history > lab1_history.txt

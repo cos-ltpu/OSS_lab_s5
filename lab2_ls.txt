@@ -1,0 +1,63 @@
+.:
+итого 184
+drwxrwxr-x. 2 student student  4096 сен 13 21:32 animals
+-rw-------. 2 student student  3549 сен 16 01:17 history_hard
+-rw-rw-r--. 1 student student  4100 окт 21 22:21 lab1_history.txt
+-rw-rw-r--. 1 student student  3916 сен 15 23:54 lab1_history (копия).txt
+-rw-rw-rw-. 1 student student   911 окт 21 23:04 lab2_history.txt
+-rw-rw-rw-. 1 student student     0 окт 21 23:05 lab2_ls.txt
+-rw-r--r--. 1 student student  2652 сен 13 21:08 passwd
+lrwxrwxrwx. 1 student student    11 сен 13 21:39 passwd_link -> /etc/passwd
+-rw-rw-r--. 1 student student 61177 сен 14 22:36 README-ru.md
+-rw-rw-r--. 1 student student 61177 сен 14 22:37 README-ru.md.1
+drwxrwxr-x. 3 student student  4096 окт 21 23:00 test
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Видео
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Документы
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Загрузки
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Изображения
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Музыка
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Общедоступные
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Рабочий стол
+drwxr-xr-x. 2 student student  4096 сен  8 15:01 Шаблоны
+
+./animals:
+итого 0
+-rw-rw-r--. 1 student student 0 сен 13 20:56 cat.txt
+-rw-rw-r--. 1 student student 0 сен 13 20:56 dog.txt
+-rw-rw-r--. 1 student student 0 сен 13 20:56 elephant.txt
+-rw-rw-r--. 1 student student 0 сен 13 20:54 lion
+
+./test:
+итого 8
+drw-rw-r--. 2 student student 4096 окт 21 22:47 dir
+-rw-r-----. 1 root    student    5 окт 21 22:39 file
+-rw-------. 1 student student    0 окт 21 22:59 file1
+-rw-rw-rw-. 1 student student    0 окт 21 23:00 file2
+
+./test/dir:
+итого 0
+-????????? ? ? ? ?            ? new_file
+
+./Видео:
+итого 0
+
+./Документы:
+итого 0
+
+./Загрузки:
+итого 0
+
+./Изображения:
+итого 0
+
+./Музыка:
+итого 0
+
+./Общедоступные:
+итого 0
+
+./Рабочий стол:
+итого 0
+
+./Шаблоны:
+итого 0
